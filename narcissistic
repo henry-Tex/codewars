@@ -1,0 +1,10 @@
+function narcissistic(value) {
+    let arrayValue = value.toString().split('');
+    let lengthNumber = arrayValue.length
+    let num = null
+    arrayValue.map(valorAtual=>{
+        num += valorAtual**lengthNumber
+    })
+    if (num === value) return true
+    return false
+}
